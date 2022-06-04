@@ -20,13 +20,13 @@ Avaliação 4 - Elementos de Sistemas
 **LEMBRE DE REALIZAR UM COMMIT (A CADA QUESTÃO) E DAR PUSH AO FINALIZAR**
 
 
-## 1. Sequência de Fibonacci - O retorno
+## 1. Sequência de Fibonacci
 
 | Pontos SW      |
 | :--:           |
 |  15            |
 
-Lembrando da Av3: a sequência de Fibonacci é uma sequência de números inteiros, onde cada termo subsequente corresponde à soma dos dois termos anteriores. A sequência normalmente começa com "0" e "1" e tem aplicações em diversas áreas como mercado financeiro, ciências da computação e fenômenos da natureza.
+A sequência de Fibonacci é uma sequência de números inteiros, onde cada termo subsequente corresponde à soma dos dois termos anteriores. A sequência normalmente começa com "0" e "1" e tem aplicações em diversas áreas como mercado financeiro, ciências da computação e fenômenos da natureza.
 
 Neste caso, solicita-se que seja escrito um programa usando a linguagem de máquina virtual de pilha para escrever os 11 primeiros números da sequência de Fibonacci na pilha.
 
