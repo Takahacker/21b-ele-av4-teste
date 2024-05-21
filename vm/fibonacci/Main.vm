@@ -1,10 +1,49 @@
 // ---------------------------------  
 // ---------------------------------
 
+// Implementação da sequência de Fibonacci
+// ---------------------------------
+// ---------------------------------
+
 function Main.main 0
 
+// Inicialize os primeiros dois números da sequência de Fibonacci
+push constant 0 // Coloca 0 na pilha
+push constant 1 // Coloca 1 na pilha
 
+// Vamos usar um contador para controlar o loop
+push constant 9 // Precisamos calcular mais 9 números (total de 11)
+
+// Label do loop
+label LOOP_START
+
+// Duplicar os dois últimos números na pilha (F(n-1) e F(n-2))
+push constant 1
+add // Incrementa o SP para apontar para o próximo número
+push constant 1
+sub // Decrementa o SP para voltar ao F(n-1)
+pop temp 0 // Armazena F(n-1) em temp 0
+push constant 2
+sub // Decrementa o SP para voltar ao F(n-2)
+pop temp 1 // Armazena F(n-2) em temp 1
+
+// Calcula F(n) = F(n-1) + F(n-2)
+push temp 0 // Recupera F(n-1)
+push temp 1 // Recupera F(n-2)
+add // Soma F(n-1) e F(n-2)
+
+// Empilha o resultado
+dup // Duplica o resultado para mantê-lo na pilha
+
+// Verifica se o contador chegou a 0
+push constant 1
+sub // Decrementa o contador
+dup // Duplica o valor do contador para comparação
+if-goto LOOP_START
+
+// Limpa o contador da pilha
+pop // Remove o contador
 
 // nao deve tirar isso!
 label while2
-    goto while2
+goto while2
